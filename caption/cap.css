@@ -1,0 +1,162 @@
+@charset "UTF-8";
+body {
+  background-color: #000;
+  margin: 0;
+  height: 100%;
+  /* 以下でスクロールバーの削除 */
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  /* IE, Edge 対応 */
+  scrollbar-width: none;
+  /* Firefox 対応 */
+}
+
+body::-webkit-scrollbar {
+  /* Chrome, Safari 対応 */
+  display: none;
+}
+
+ul {
+  margin: 0;
+  position: fixed;
+  left: 90px;
+  top: 78px;
+}
+
+li {
+  list-style: none;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+h6, p {
+  color: #fff;
+  margin: 0;
+  font-size: 16px;
+}
+
+.container {
+  margin: 180px auto 160px;
+}
+
+.explain {
+  margin: 0 auto;
+  width: 794px;
+  margin-bottom: 120px;
+}
+
+.explain h6 {
+  font-weight: normal;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #fff;
+}
+
+.explain p {
+  padding-top: 16px;
+  text-align: justify;
+}
+
+.svg {
+  margin-bottom: 24px;
+}
+
+.data {
+  margin: 0 auto 160px;
+  width: 794px;
+}
+
+.data p {
+  margin-bottom: 24px;
+}
+
+.data .pictop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.data .pictop p {
+  font-size: 11px;
+  text-align: center;
+}
+
+.data .pictop .center {
+  margin: 0 auto;
+  margin-top: 140px;
+}
+
+.data .cen-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.data .cen-center .svg {
+  margin: 0 auto 24px;
+}
+
+.data .picbot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.data .picbot p {
+  font-size: 11px;
+  text-align: center;
+}
+
+.data .picbot .center {
+  margin: 0 auto;
+  margin-top: 140px;
+}
+
+.process {
+  margin: 0 auto 180px;
+  width: 794px;
+}
+
+.process p {
+  margin-bottom: 24px;
+}
+
+.process .picpro {
+  margin-bottom: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.process .picpro .left {
+  margin-right: 242px;
+}
+
+.process .picpro .right {
+  margin-top: 60px;
+}
+
+.process .picpro .svg {
+  margin-bottom: 0;
+}
+
+.process .exp {
+  text-align: center;
+  font-size: 12px;
+}
+
+.return {
+  text-align: center;
+}
+/*# sourceMappingURL=cap.css.map */

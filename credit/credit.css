@@ -1,0 +1,42 @@
+body {
+  background-color: #000;
+  margin: 0;
+}
+ul {
+  margin: 0;
+  position: fixed;
+  left: 90px;
+  top: 78px;
+}
+li {
+  list-style: none;
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+/* 以下Babel.jsによるアニメーション */
+html, body {
+  height: 100%;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.text {
+  font-weight: 100;
+  font-size: 16px;
+  color: #fff;
+}
+.dud {
+  color: #757575;
+}
+.back {
+  right: 47%;
+  position: absolute;
+  bottom: 300px;
+}

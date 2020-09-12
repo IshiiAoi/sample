@@ -1,0 +1,123 @@
+body {
+  background-color: #000;
+  margin: 0;
+  height: 100%;
+  /* 以下でスクロールバーの削除 */
+  overflow-y:scroll;
+  -ms-overflow-style: none;    /* IE, Edge 対応 */
+  scrollbar-width: none;       /* Firefox 対応 */
+}
+body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+  display:none;
+}
+ul {
+  margin: 0;
+  position: fixed;
+  left: 90px;
+  top: 78px;
+}
+li {
+  list-style: none;
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+h6, p {
+  color: #fff;
+  margin: 0;
+  font-size: 16px;
+}
+.container {
+  margin: 180px auto 160px;
+}
+.explain {
+  margin: 0 auto;
+  width: 794px;
+  margin-bottom: 120px;
+
+  & h6 {
+    font-weight: normal;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #fff;
+  }
+  & p {
+    padding-top: 16px;
+    text-align: justify;
+  }
+}
+.svg {
+  margin-bottom: 24px;
+}
+.data {
+  margin: 0 auto 160px;
+  width: 794px;
+  
+  & p {
+    margin-bottom: 24px;
+  }
+  & .pictop {
+    display: flex;
+    flex-wrap: wrap;
+
+    & p {
+      font-size: 11px;
+      text-align: center;
+    }
+    & .center {
+      margin: 0 auto;
+      margin-top: 140px;
+    }
+  }
+  & .cen-center {
+    display: flex;
+    flex-wrap: wrap;
+    & .svg {
+      margin: 0 auto 24px;
+    }
+  }
+  & .picbot {
+    display: flex;
+    flex-wrap: wrap;
+
+    & p {
+      font-size: 11px;
+      text-align: center;
+    }
+    & .center {
+      margin: 0 auto;
+      margin-top: 140px;
+    }
+  }
+}
+.process {
+  margin: 0 auto 180px;
+  width: 794px;
+
+  & p {
+    margin-bottom: 24px;
+  }
+  & .picpro {
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+
+    & .left {
+      margin-right: 242px;
+    }
+    & .right {
+      margin-top: 60px;
+    }
+    & .svg {
+      margin-bottom: 0;
+    }
+  }
+  & .exp {
+    text-align: center;
+    font-size: 12px;
+  }
+}
+.return {
+  text-align: center;
+}

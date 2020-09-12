@@ -1,0 +1,141 @@
+body {
+  background-color: #000;
+  margin: 0;
+  height: 100%;
+  /* 以下でスクロールバーの削除 */
+  overflow-y:scroll;
+  -ms-overflow-style: none;    /* IE, Edge 対応 */
+  scrollbar-width: none;       /* Firefox 対応 */
+}
+body::-webkit-scrollbar {  /* Chrome, Safari 対応 */
+  display:none;
+}
+/* Div等のタグが重なっている時はリンクが機能しないため幅を調整 */
+#site-content{
+  height:6500px;
+  margin: 0 auto;
+  width: 60%;
+}
+.apolo {
+  position: fixed;
+  width: 60%;
+  height: 100%;
+}
+ul {
+  margin: 0;
+  position: fixed;
+  left: 90px;
+  top: 78px;
+}
+li {
+  list-style: none;
+  font-size: 14px;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.copy {
+  margin: 0 auto;
+  bottom: 78px;
+  position: fixed;
+  width: 60%;
+  text-align: center;
+  font-size: 16px;
+}
+p {
+  margin: 0;
+  color: #fff;
+}
+/* 以下で縦線のみ消去 */
+/* .pagetop3, .pagetop5, .pagetop7, .pagetop9 {
+  display: none;
+} */
+/* 以下 scroll(左下)について記述 */
+.scroll {
+  left: 120px;
+  bottom: 48px;
+  position: fixed;
+  opacity: .5;
+}
+.rotate {
+  position: absolute;
+  bottom: 40px;
+  font-size: 14px;
+}
+a .scroll {
+  display: inline-block;
+  position: absolute;
+  left: 90px;
+  bottom: 48px;
+  z-index: 2;
+  padding: 10px 10px 110px;
+  overflow: hidden;
+  color: #fff;
+  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;
+  line-height: 1;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  writing-mode: vertical-lr;
+}
+a.scroll::after {
+  content: '';
+  position: fixed;
+  bottom: 0;
+  left: 135px;
+  bottom: 48px;
+  width: 1px;
+  height: 40px;
+  background: #fff;
+}
+a.scroll::after {
+  animation: sdl 1.5s cubic-bezier(1, 0, 0, 1) infinite;
+}
+@keyframes sdl {
+  0% {
+    transform: scale(1, 0);
+    transform-origin: 0 0;
+  }
+  50% {
+    transform: scale(1, 1);
+    transform-origin: 0 0;
+  }
+  50.1% {
+    transform: scale(1, 1);
+    transform-origin: 0 100%;
+  }
+  100% {
+    transform: scale(1, 0);
+    transform-origin: 0 100%;
+  }
+}
+/* 以下 スクロールと同時に変化する円(右側)について記述 ※追記が必要*/
+.circle {
+  margin: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  position: absolute;
+  float: right;
+  right: 90px;
+}
+.fir {
+  top: 78px;
+  background-color: #fff;
+  opacity: .3;
+  position: fixed;
+  line-height: 48px;
+}
+.four {
+  bottom: 78px;
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
+  border: 1px solid #fff;
+}
+.arrow {
+  margin-top: 18px;
+  margin-left: 15px;
+  display: none;
+}
